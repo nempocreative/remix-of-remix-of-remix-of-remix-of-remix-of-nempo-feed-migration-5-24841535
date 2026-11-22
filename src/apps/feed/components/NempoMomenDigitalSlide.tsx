@@ -1,11 +1,11 @@
 import type { ReactNode, RefObject } from 'react';
-import { Heart, Link2, Lock, Music2, Pause, SkipForward, Sparkles } from 'lucide-react';
+import { Heart, Link2, Lock, Music2, Pause, SkipForward } from 'lucide-react';
 import bgGraduation from '@/assets/momen-digital/momen-digital-latar-kelulusan.webp.asset.json';
-import bgClass from '@/assets/momen-digital/momen-digital-latar-kelas.webp.asset.json';
-import titleMomen from '@/assets/momen-digital/momen-digital-judul-momen-digital.webp.asset.json';
-import titlePeek from '@/assets/momen-digital/momen-digital-judul-intip-web.webp.asset.json';
-import titleFeatures from '@/assets/momen-digital/momen-digital-judul-fitur-seru.webp.asset.json';
-import titleOrder from '@/assets/momen-digital/momen-digital-judul-cara-pesan.webp.asset.json';
+import bgClass from '@/assets/momen-digital/momen-digital-latar-kelas-tanpa-bintang.webp.asset.json';
+import titleMomen from '@/assets/momen-digital/momen-digital-judul-momen-digital-tanpa-bintang.webp.asset.json';
+import titlePeek from '@/assets/momen-digital/momen-digital-judul-intip-web-tanpa-bintang.webp.asset.json';
+import titleFeatures from '@/assets/momen-digital/momen-digital-judul-fitur-seru-tanpa-bintang.webp.asset.json';
+import titleOrder from '@/assets/momen-digital/momen-digital-judul-cara-pesan-tanpa-bintang.webp.asset.json';
 import classPhoto from '@/assets/momen-digital/momen-digital-foto-angkatan.webp.asset.json';
 import nadia from '@/assets/momen-digital/momen-digital-siswa-nadia.webp.asset.json';
 import rayhan from '@/assets/momen-digital/momen-digital-siswa-rayhan.webp.asset.json';
@@ -252,7 +252,6 @@ function PlaylistScreen() {
       <div className="nmd-progress"><i /></div>
       <div className="nmd-controls"><span>{W.playlist.time}</span><Pause /><SkipForward /></div>
       <ul className="nmd-songs">{songs.map((s, i) => <li key={s} className={i === 0 ? 'is-on' : ''}><Music2 />{s}</li>)}</ul>
-      <p className="nmd-capsule"><Sparkles aria-hidden="true" />{W.capsule}</p>
     </div>
   );
 }

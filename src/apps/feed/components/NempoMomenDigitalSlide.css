@@ -252,7 +252,7 @@
 .nmd-format p { font-family: 'Playfair Display', serif; font-size: 3.6cqw; font-weight: 700; line-height: 1; color: var(--nmd-gold); }
 .nmd-format ul { margin-top: 1.2cqw; display: flex; flex-direction: column; gap: .8cqw; }
 .nmd-format li { position: relative; padding-left: 2.4cqw; font-size: 2.1cqw; font-weight: 500; line-height: 1.2; }
-.nmd-format li::before { content: '✦'; position: absolute; left: 0; top: 0; color: var(--nmd-gold); }
+.nmd-format li::before { content: ''; position: absolute; left: .2cqw; top: .55cqw; width: 1.1cqw; height: 1.1cqw; border-radius: 50%; background: var(--nmd-gold); }
 .nmd-order-cta {
   position: absolute; z-index: 7; left: 50%; bottom: 15.5cqw; transform: translateX(-50%) rotate(-2deg);
   padding: 1.6cqw 5cqw; border-radius: 99cqw; background: var(--nmd-sun); color: var(--nmd-navy);

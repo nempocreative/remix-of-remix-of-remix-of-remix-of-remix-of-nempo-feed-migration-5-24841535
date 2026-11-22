@@ -277,6 +277,10 @@ import { NEMPO_MOMEN_DIGITAL_SLIDES, type NempoMomenDigitalSlideNumber } from '.
 import { NempoMomenDigitalSlide } from './components/NempoMomenDigitalSlide';
 import carFreeDay57Png from '@/assets/nempo-feed-57/nempo-feed-57-car-free-day.png.asset.json';
 import cfdInfo58Png from '@/assets/nempo-feed-58/nempo-feed-58-cfd-info.png.asset.json';
+import momenDigital59Png from '@/assets/nempo-feed-59-62/nempo-feed-59-momen-digital.png.asset.json';
+import momenDigital60Png from '@/assets/nempo-feed-59-62/nempo-feed-60-momen-digital.png.asset.json';
+import momenDigital61Png from '@/assets/nempo-feed-59-62/nempo-feed-61-momen-digital.png.asset.json';
+import momenDigital62Png from '@/assets/nempo-feed-59-62/nempo-feed-62-momen-digital.png.asset.json';
 import kolaborasi55Png from '@/assets/nempo-feed-55/nempo-feed-55-calling-cafe-wisata.png.asset.json';
 import kolaborasi56Png from '@/assets/nempo-feed-55/nempo-feed-56-cara-kolaborasi.png.asset.json';
 import { NempoTerimaKasihSlide } from './components/NempoTerimaKasihSlide';
@@ -294,6 +298,12 @@ import divisionPng40 from '@/assets/nempo-feed-40-divisi-content-creator.png.ass
 import divisionPng41 from '@/assets/nempo-feed-41-divisi-videografer-fotografer.png.asset.json';
 import divisionPng42 from '@/assets/nempo-feed-42-divisi-marketing.png.asset.json';
 import divisionPng43 from '@/assets/nempo-feed-43-divisi-event-management.png.asset.json';
+const NEMPO_MOMEN_DIGITAL_PNGS: Record<NempoMomenDigitalSlideNumber, { src: string; fileName: string }> = {
+  59: { src: momenDigital59Png.url, fileName: 'Nempo-ID-59-Momen-Digital.png' },
+  60: { src: momenDigital60Png.url, fileName: 'Nempo-ID-60-Intip-Web-Year-Book.png' },
+  61: { src: momenDigital61Png.url, fileName: 'Nempo-ID-61-Fitur-Momen-Digital.png' },
+  62: { src: momenDigital62Png.url, fileName: 'Nempo-ID-62-Cara-Pesan-Momen-Digital.png' },
+};
 const DIVISION_PNGS: Partial<Record<number, string>> = {38: divisionPng38.url, 39: divisionPng39.url, 40: divisionPng40.url, 41: divisionPng41.url, 42: divisionPng42.url, 43: divisionPng43.url};
 
 const SpreadsheetViewer = lazy(async () => {
@@ -4350,6 +4360,19 @@ function App() {
                   key="nempo-feed-57"
                   src={carFreeDay57Png.url}
                   fileName="Nempo-ID-57-Car-Free-Day.png"
+                  label="Download PNG · 3×"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
+                </p>
+              </>
+            ) : isNempoFeed && (NEMPO_MOMEN_DIGITAL_SLIDES as readonly number[]).includes(activeSlide) ? (
+              <>
+                <PrebuiltPngDownload
+                  key={`nempo-feed-${activeSlide}`}
+                  src={NEMPO_MOMEN_DIGITAL_PNGS[activeSlide as NempoMomenDigitalSlideNumber].src}
+                  fileName={NEMPO_MOMEN_DIGITAL_PNGS[activeSlide as NempoMomenDigitalSlideNumber].fileName}
                   label="Download PNG · 3×"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 />
