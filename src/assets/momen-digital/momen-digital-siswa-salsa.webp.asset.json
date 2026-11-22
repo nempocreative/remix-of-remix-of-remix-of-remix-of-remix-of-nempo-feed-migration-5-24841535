@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "86bb4320-8b7c-4b6a-b14d-36400821a2c0",
-  "project_id": "3dd3a48a-0086-441d-8d2c-4ea75df96fd3",
-  "url": "/__l5e/assets-v1/86bb4320-8b7c-4b6a-b14d-36400821a2c0/momen-digital-siswa-salsa.webp",
-  "r2_key": "a/v1/3dd3a48a-0086-441d-8d2c-4ea75df96fd3/86bb4320-8b7c-4b6a-b14d-36400821a2c0/momen-digital-siswa-salsa.webp",
-  "original_filename": "momen-digital-siswa-salsa.webp",
-  "size": 11752,
   "content_type": "image/webp",
-  "created_at": "2026-11-22T11:09:47Z"
+  "created_at": "2026-11-22T11:09:47Z",
+  "original_filename": "momen-digital-siswa-salsa.webp",
+  "project_id": "9191c8c4-3904-4368-abf0-27795ae82657",
+  "r2_key": "a/v1/9191c8c4-3904-4368-abf0-27795ae82657/86bb4320-8b7c-4b6a-b14d-36400821a2c0/momen-digital-siswa-salsa.webp",
+  "size": 11752,
+  "url": "/__l5e/assets-v1/86bb4320-8b7c-4b6a-b14d-36400821a2c0/momen-digital-siswa-salsa.webp",
+  "version": 1
 }

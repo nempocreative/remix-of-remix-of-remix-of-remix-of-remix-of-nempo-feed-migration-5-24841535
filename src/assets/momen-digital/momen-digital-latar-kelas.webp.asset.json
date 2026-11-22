@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "e8dbb298-6e78-490e-879a-a3efbc933089",
-  "project_id": "3dd3a48a-0086-441d-8d2c-4ea75df96fd3",
-  "url": "/__l5e/assets-v1/e8dbb298-6e78-490e-879a-a3efbc933089/momen-digital-latar-kelas.webp",
-  "r2_key": "a/v1/3dd3a48a-0086-441d-8d2c-4ea75df96fd3/e8dbb298-6e78-490e-879a-a3efbc933089/momen-digital-latar-kelas.webp",
-  "original_filename": "momen-digital-latar-kelas.webp",
-  "size": 158872,
   "content_type": "image/webp",
-  "created_at": "2026-11-22T11:09:43Z"
+  "created_at": "2026-11-22T11:09:43Z",
+  "original_filename": "momen-digital-latar-kelas.webp",
+  "project_id": "9191c8c4-3904-4368-abf0-27795ae82657",
+  "r2_key": "a/v1/9191c8c4-3904-4368-abf0-27795ae82657/e8dbb298-6e78-490e-879a-a3efbc933089/momen-digital-latar-kelas.webp",
+  "size": 158872,
+  "url": "/__l5e/assets-v1/e8dbb298-6e78-490e-879a-a3efbc933089/momen-digital-latar-kelas.webp",
+  "version": 1
 }
