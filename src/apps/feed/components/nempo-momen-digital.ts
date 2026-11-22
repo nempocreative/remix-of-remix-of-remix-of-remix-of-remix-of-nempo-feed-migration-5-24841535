@@ -1,39 +1,92 @@
 /**
- * NEMPO Feed slide 59 — the "Momen Digital" service (memory websites such as a class yearbook) as a bright
- * poster in slide 56's layout, with a phone preview of the Year Book page from nempo.id (github.com/nempocreative/nempo-web-20).
+ * NEMPO Feed slides 59–62 — the "Momen Digital" service (memory websites, starting with the class Year Book) in
+ * slide 57's bright poster look. Copy follows the Year Book pages of github.com/nempocreative/nempo-web-20
+ * (`/year-book` and `/year-book/2026`); names and photos in the web preview are samples, not real students.
  */
 import { nempoKolaborasi } from './nempo-kolaborasi';
 
-export const NEMPO_MOMEN_DIGITAL_SLIDE = 59;
+export const NEMPO_MOMEN_DIGITAL_SLIDES = [59, 60, 61, 62] as const;
+export type NempoMomenDigitalSlideNumber = (typeof NEMPO_MOMEN_DIGITAL_SLIDES)[number];
 
-/** Prebuilt PNG, captured from the preview at 1080 CSS px × 3. */
+/** Prebuilt PNG per slide, captured from the preview at 1080 CSS px × 3. */
 export const NMD_EXPORT = { width: 3240, height: 4320 } as const;
 
 export const nempoMomenDigital = {
   badge: 'Momen Digital',
-  title: ['Momen', 'Digital,'],
-  tagline: 'Kenanganmu Jadi Website!',
-  release: 'Satu link · bisa dibuka kapan aja',
-  creditsLabel: 'Bisa buat',
-  credits: ['Year book angkatan', 'Momen kelas', 'Geng & organisasi', 'Event & komunitas'],
-  stepsLabel: 'Cara pesan',
-  steps: ['Chat admin NEMPO', 'Kirim foto & cerita', 'Web kenangan jadi!'],
   cta: `Chat Admin · WA ${nempoKolaborasi.whatsapp.number}`,
-  /** Phone preview copied from the Year Book demo on nempo.id (sample names, not real students). */
-  web: {
-    url: 'nempo.id/year-book',
-    kicker: 'Year Book 2026',
-    title: 'Sejuta Cerita',
-    school: 'SMA Nempo Garut · Angkatan 2026',
-    quote: 'Kita mungkin punya arah berbeda, tapi pernah tumbuh di halaman yang sama.',
-    students: [
-      { key: 'nadia', name: 'Nadia' },
-      { key: 'rayhan', name: 'Rayhan' },
-      { key: 'salsa', name: 'Salsa' },
-      { key: 'dimas', name: 'Dimas' },
+
+  /** Slide 59 — cover */
+  cover: {
+    title: ['Momen', 'Digital'],
+    tagline: 'Kenangan Jadi Satu Link',
+    release: 'Foto · cerita · pesan · musik',
+    lead: 'Satu konsep, banyak bentuk:',
+    kinds: ['Year Book', 'Kelas', 'Geng & Grup', 'Organisasi', 'Event', 'Komunitas', 'Ucapan Spesial'],
+  },
+
+  /** Slide 60 — a look at the Year Book website */
+  peek: {
+    title: ['Intip', 'Web-nya!'],
+    tagline: 'Contoh: Year Book Angkatan',
+    release: 'Gambaran web · nama & foto contoh',
+    lead: 'Apa saja yang masuk buku?',
+    contents: ['Profil lulusan', 'Galeri momen', 'Linimasa angkatan', 'Pesan guru', 'Dinding pesan', 'Sampul & identitas'],
+  },
+
+  /** Slide 61 — interactive features */
+  features: {
+    title: ['Fiturnya', 'Seru!'],
+    tagline: 'Bukan cuma buat dilihat',
+    release: 'Bisa diputar, dikomen & dimainin',
+    lead: 'Plus fitur interaktif:',
+    extras: ['Video perpisahan', 'Voting si paling berkesan', 'Peta mimpi', 'Kartu Story', 'Tebak teman sekelas', 'Kapsul waktu'],
+  },
+
+  /** Slide 62 — how to order */
+  order: {
+    title: ['Cara', 'Pesannya!'],
+    tagline: 'Empat langkah sampai jadi',
+    release: 'Cetak, digital, atau dua-duanya',
+    steps: [
+      { name: 'Konsultasi', note: 'Ceritain kelompok & acaramu' },
+      { name: 'Kumpulkan isi', note: 'Foto, cerita & pesan' },
+      { name: 'Desain & tinjau', note: 'Revisi bareng sampai pas' },
+      { name: 'Cetak & bagikan', note: 'Satu link buat semua' },
     ],
-    wall: 'Pesan dinding',
-    wallCount: 128,
-    note: 'Contoh cuplikan web',
+    formats: [
+      { name: 'Digital', points: ['Tautan khusus untuk angkatan', 'Foto bisa dibuka ukuran penuh', 'Isinya bisa ditambah setelah cetak'] },
+      { name: 'Cetak', points: ['Pilihan ukuran dan jenis kertas', 'Sampul tebal dengan nama angkatan', 'Dibagikan pas hari perpisahan'] },
+    ],
+  },
+
+  /** Sample Year Book shown inside the device mockups (from the /year-book/2026 demo). */
+  web: {
+    url: 'nempo.id/year-book/2026',
+    kicker: 'Year Book',
+    year: '2026',
+    title: 'Sejuta Cerita',
+    school: 'SMA Nempo Garut',
+    intro: 'Tiga tahun, satu angkatan, sejuta cerita yang kita simpan di sini.',
+    chapters: ['Sambutan', 'Linimasa', 'Kelas', 'Galeri', 'Pesan'],
+    stats: [
+      { label: 'Lulusan', value: '108' },
+      { label: 'Kelas', value: '3' },
+      { label: 'Momen', value: '240' },
+      { label: 'Pesan', value: '512' },
+    ],
+    students: [
+      { key: 'nadia', name: 'Nadia Putri', role: 'Ketua Angkatan', kelas: 'XII IPA 1' },
+      { key: 'rayhan', name: 'Rayhan Aditya', role: 'Si Paling Strategis', kelas: 'XII IPA 2' },
+      { key: 'salsa', name: 'Salsa Nuraini', role: 'Creative Soul', kelas: 'XII IPS 1' },
+      { key: 'dimas', name: 'Dimas Pratama', role: 'Si Paling Kocak', kelas: 'XII IPS 1' },
+    ],
+    profileQuote: 'Kita mungkin punya arah berbeda, tapi pernah tumbuh di halaman yang sama.',
+    gallery: { kicker: 'kangen nggak?', title: 'momen-momen kita' },
+    wall: {
+      title: 'Tanda tangan & pesan',
+      notes: ['Jangan lupa reuni ya!', 'Makasih udah jadi temen terbaik', 'Sukses kuliahnya, bestie!', 'Kantin lantai 2 forever'],
+    },
+    playlist: { title: 'Lagu yang membawa kita pulang', now: 'Lagu Perpisahan Angkatan', time: '1:24' },
+    capsule: 'Sampai jumpa, lima tahun lagi.',
   },
 } as const;

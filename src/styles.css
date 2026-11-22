@@ -838,30 +838,42 @@
   --ncfd-pop: 0 .7cqw 0 #1453b8;
   --ncfd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
 }
-/* Nempo Feed slide 58: informative Car Free Day poster with real news photos — same palette as slide 57. */
+/* Nempo Feed slides 59–62: Momen Digital series in slide 57's bright poster look, with the Year Book web palette. */
 .nmd-root {
-  --nmd-sky: linear-gradient(180deg, #2f9cf2 0%, #4fb4fa 14%, #5fbefc 24%);
+  --nmd-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
+  --nmd-sky-tint: linear-gradient(180deg, color-mix(in srgb, #0a62cc 82%, transparent) 0%, color-mix(in srgb, #0f7ae6 62%, transparent) 50%, transparent 100%);
+  --nmd-title-pop: drop-shadow(0 .55cqw 0 #1453b8) drop-shadow(0 0 1.6cqw color-mix(in srgb, #0b3f9a 60%, transparent));
   --nmd-white: #ffffff;
   --nmd-navy: #15386f;
   --nmd-blue-deep: #1453b8;
   --nmd-sun: #ffd23f;
   --nmd-sun-deep: #e8901c;
   --nmd-pink: #ff7fb4;
+  --nmd-pink-deep: #e2457f;
   --nmd-mint: #5fe0b0;
   --nmd-lilac: #b79cff;
-  --nmd-card-glass: color-mix(in srgb, #ffffff 92%, transparent);
+  --nmd-card-glass: color-mix(in srgb, #ffffff 93%, transparent);
   --nmd-pop: 0 .7cqw 0 #1453b8;
   --nmd-text-pop: 0 .3cqw 0 #1453b8, 0 .6cqw 1.4cqw color-mix(in srgb, #0b2f74 45%, transparent);
-  /* Year Book page palette from nempo.id */
+  --nmd-device: #1b2240;
+  --nmd-device-edge: #39436e;
+  --nmd-device-shadow: 0 1cqw 0 #1453b8, 0 2.4cqw 4cqw color-mix(in srgb, #0b2f74 50%, transparent);
+  /* Year Book web palette (github.com/nempocreative/nempo-web-20) */
   --nmd-paper: #f4f6ff;
   --nmd-card: #ffffff;
   --nmd-ink: #141c3f;
   --nmd-ink-soft: #565f88;
   --nmd-line: #dbe1f6;
   --nmd-accent: #2b3fd8;
-  --nmd-brass: #f2a007;
-  --nmd-phone-shadow: 0 1.2cqw 0 #1453b8, 0 2.4cqw 4cqw color-mix(in srgb, #0b2f74 45%, transparent);
+  --nmd-gold: #f2a007;
+  --nmd-cream: #fff6dc;
+  --nmd-cover: radial-gradient(ellipse at 50% 0%, #2a3a7a 0%, #141c3f 70%);
+  --nmd-note-yellow: #fff1a8;
+  --nmd-note-pink: #ffd6e7;
+  --nmd-note-mint: #c9f5e4;
+  --nmd-note-lilac: #e3d8ff;
 }
+/* Nempo Feed slide 58: informative Car Free Day poster with real news photos — same palette as slide 57. */
 .nci-root {
   --nci-sky: linear-gradient(180deg, #0a7fe8 0%, #1b98fb 22%, #2aa6fd 30%);
   --nci-sky-tint: linear-gradient(180deg, color-mix(in srgb, #0a62cc 82%, transparent) 0%, color-mix(in srgb, #0f7ae6 62%, transparent) 50%, transparent 100%);
