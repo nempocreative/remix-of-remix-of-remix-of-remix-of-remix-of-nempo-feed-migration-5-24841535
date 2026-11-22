@@ -22,3 +22,4 @@
 - [ ] GGS Story slide 08: bingkai header/footer Story belum dipasang — menunggu pemilik mengirim ulang gambar bingkainya (media proyek lama tidak ikut)
 - [x] NEMPO Feed slide 59 dst: layanan Momen Digital, karakter desain seperti slide 57, dengan gambaran web Year Book (contoh github.com/nempocreative/nempo-web-20); gambar dibuat ulang milik proyek ini; PNG unduhan
 - [x] NEMPO Feed slide 59–62: tanpa ikon/hiasan bintang (judul, poin, ikon, papan tulis); PNG unduhan dibuat ulang
+- [x] NEMPO Feed slide 59–62: baris teks di bawah pita kuning dihapus; PNG unduhan dibuat ulang
