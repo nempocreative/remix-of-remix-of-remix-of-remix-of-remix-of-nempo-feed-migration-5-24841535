@@ -29,7 +29,7 @@ const BG_ALT = {
 
 /** Slide 57's poster shell: artwork with its own sky, shared header, AI-lettered white title, sticker, tilted line, footer. */
 function Shell({
-  exportRef, variant, bg, title, titleWords, tagline, release, label, children,
+  exportRef, variant, bg, title, titleWords, tagline, label, children,
 }: {
   exportRef: ExportRef;
   variant: string;
@@ -37,7 +37,6 @@ function Shell({
   title: string;
   titleWords: readonly string[];
   tagline: string;
-  release: string;
   label: string;
   children: ReactNode;
 }) {
@@ -50,7 +49,6 @@ function Shell({
         <span className="nmd-sr">{titleWords.join(' ')}</span>
       </h2>
       <p className="nmd-tagline"><Link2 aria-hidden="true" />{tagline}</p>
-      <p className="nmd-release">{release}</p>
       {children}
       <NempoFooter />
     </section>
@@ -113,7 +111,6 @@ export function NempoMomenDigitalCoverSlide({ exportRef }: { exportRef?: ExportR
       title={titleMomen.url}
       titleWords={C.title}
       tagline={C.tagline}
-      release={C.release}
       label={`${C.title.join(' ')}: ${C.tagline}. ${C.lead} ${C.kinds.join(', ')}. ${M.cta}`}
     >
       <Phone className="nmd-phone-cover"><CoverScreen /></Phone>
@@ -188,7 +185,6 @@ export function NempoMomenDigitalPeekSlide({ exportRef }: { exportRef?: ExportRe
       title={titlePeek.url}
       titleWords={P.title}
       tagline={P.tagline}
-      release={P.release}
       label={`${P.title.join(' ')} ${P.tagline}. Gambaran web Year Book ${W.title}, ${W.school}. ${P.lead} ${P.contents.join(', ')}.`}
     >
       <div className="nmd-laptop" aria-hidden="true">
@@ -266,7 +262,6 @@ export function NempoMomenDigitalFeaturesSlide({ exportRef }: { exportRef?: Expo
       title={titleFeatures.url}
       titleWords={F.title}
       tagline={F.tagline}
-      release={F.release}
       label={`${F.title.join(' ')} ${F.tagline}. Galeri ${W.gallery.title}, ${W.wall.title}, playlist ${W.playlist.title}. ${F.lead} ${F.extras.join(', ')}.`}
     >
       <Phone className="nmd-phone-fan nmd-phone-left"><GalleryScreen /></Phone>
@@ -292,7 +287,6 @@ export function NempoMomenDigitalOrderSlide({ exportRef }: { exportRef?: ExportR
       title={titleOrder.url}
       titleWords={O.title}
       tagline={O.tagline}
-      release={O.release}
       label={`${O.title.join(' ')} ${O.steps.map((s, i) => `${i + 1}. ${s.name}`).join(', ')}. ${O.formats.map((f) => `${f.name}: ${f.points.join(', ')}`).join('. ')}. ${M.cta}`}
     >
       <ol className="nmd-steps">

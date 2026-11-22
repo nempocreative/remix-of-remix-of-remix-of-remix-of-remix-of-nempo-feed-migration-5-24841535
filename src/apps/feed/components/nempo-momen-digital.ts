@@ -19,7 +19,6 @@ export const nempoMomenDigital = {
   cover: {
     title: ['Momen', 'Digital'],
     tagline: 'Kenangan Jadi Satu Link',
-    release: 'Foto · cerita · pesan · musik',
     lead: 'Satu konsep, banyak bentuk:',
     kinds: ['Year Book', 'Kelas', 'Geng & Grup', 'Organisasi', 'Event', 'Komunitas', 'Ucapan Spesial'],
   },
@@ -28,7 +27,6 @@ export const nempoMomenDigital = {
   peek: {
     title: ['Intip', 'Web-nya!'],
     tagline: 'Contoh: Year Book Angkatan',
-    release: 'Gambaran web · nama & foto contoh',
     lead: 'Apa saja yang masuk buku?',
     contents: ['Profil lulusan', 'Galeri momen', 'Linimasa angkatan', 'Pesan guru', 'Dinding pesan', 'Sampul & identitas'],
   },
@@ -37,7 +35,6 @@ export const nempoMomenDigital = {
   features: {
     title: ['Fiturnya', 'Seru!'],
     tagline: 'Bukan cuma buat dilihat',
-    release: 'Bisa diputar, dikomen & dimainin',
     lead: 'Plus fitur interaktif:',
     extras: ['Video perpisahan', 'Voting si paling berkesan', 'Peta mimpi', 'Kartu Story', 'Tebak teman sekelas', 'Kapsul waktu'],
   },
@@ -46,7 +43,6 @@ export const nempoMomenDigital = {
   order: {
     title: ['Cara', 'Pesannya!'],
     tagline: 'Empat langkah sampai jadi',
-    release: 'Cetak, digital, atau dua-duanya',
     steps: [
       { name: 'Konsultasi', note: 'Ceritain kelompok & acaramu' },
       { name: 'Kumpulkan isi', note: 'Foto, cerita & pesan' },
