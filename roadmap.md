@@ -27,3 +27,4 @@
 - [x] GGS Feed slide 63: perbaiki bentuk (shape) tanggal; PNG unduhan dibuat ulang
 - [x] GGS 63: hapus strip putih bawah di unduhan + huruf k/g judul jangan terpotong
 - [x] GGS 63: unduhan tanpa garis putih di tepi (sama seperti pratinjau)
+- [x] Cek semua unduhan PNG: garis putih di tepi atas GGS 19 juga dihapus
