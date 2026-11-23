@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "b9e33cc6-2fcf-4df6-b295-79b47040e3ea",
-  "project_id": "f8834727-22aa-440e-bcc6-dd78aa846728",
-  "url": "/__l5e/assets-v1/b9e33cc6-2fcf-4df6-b295-79b47040e3ea/ggs-feed-63-pijat.webp",
-  "r2_key": "a/v1/f8834727-22aa-440e-bcc6-dd78aa846728/b9e33cc6-2fcf-4df6-b295-79b47040e3ea/ggs-feed-63-pijat.webp",
-  "original_filename": "ggs-feed-63-pijat.webp",
-  "size": 332294,
   "content_type": "image/webp",
-  "created_at": "2026-11-23T10:18:22Z"
+  "created_at": "2026-11-23T10:18:22Z",
+  "original_filename": "ggs-feed-63-pijat.webp",
+  "project_id": "2094ea4f-8abb-4776-b37b-5501c899dfe3",
+  "r2_key": "a/v1/2094ea4f-8abb-4776-b37b-5501c899dfe3/b9e33cc6-2fcf-4df6-b295-79b47040e3ea/ggs-feed-63-pijat.webp",
+  "size": 332294,
+  "url": "/__l5e/assets-v1/b9e33cc6-2fcf-4df6-b295-79b47040e3ea/ggs-feed-63-pijat.webp",
+  "version": 1
 }
