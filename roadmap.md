@@ -23,3 +23,4 @@
 - [x] NEMPO Feed slide 59 dst: layanan Momen Digital, karakter desain seperti slide 57, dengan gambaran web Year Book (contoh github.com/nempocreative/nempo-web-20); gambar dibuat ulang milik proyek ini; PNG unduhan
 - [x] NEMPO Feed slide 59–62: tanpa ikon/hiasan bintang (judul, poin, ikon, papan tulis); PNG unduhan dibuat ulang
 - [x] NEMPO Feed slide 59–62: baris teks di bawah pita kuning dihapus; PNG unduhan dibuat ulang
+- [x] GGS Feed slide 63: promo Perawatan ujung rambut sampai ujung kaki Rp 250.000 (24 Nov–5 Des 2026) + Download PNG 3240×4320
