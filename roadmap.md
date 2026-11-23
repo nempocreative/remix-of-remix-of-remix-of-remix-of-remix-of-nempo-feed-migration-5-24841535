@@ -24,3 +24,4 @@
 - [x] NEMPO Feed slide 59–62: tanpa ikon/hiasan bintang (judul, poin, ikon, papan tulis); PNG unduhan dibuat ulang
 - [x] NEMPO Feed slide 59–62: baris teks di bawah pita kuning dihapus; PNG unduhan dibuat ulang
 - [x] GGS Feed slide 63: promo Perawatan ujung rambut sampai ujung kaki Rp 250.000 (24 Nov–5 Des 2026) + Download PNG 3240×4320
+- [x] GGS Feed slide 63: perbaiki bentuk (shape) tanggal; PNG unduhan dibuat ulang

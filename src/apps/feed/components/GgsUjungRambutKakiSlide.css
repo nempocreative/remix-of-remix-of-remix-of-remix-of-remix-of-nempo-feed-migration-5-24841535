@@ -155,17 +155,25 @@
   left: 40cqw;
   right: 5cqw;
   bottom: 14.5cqw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ggur-date {
+  position: relative;
+  z-index: 1;
   display: inline-block;
-  margin-left: 2.4cqw;
-  padding: 1.1cqw 4cqw 1.1cqw 3cqw;
-  border-radius: 99cqw 99cqw 0 0;
+  margin-bottom: -2.1cqw;
+  padding: 1.2cqw 4.4cqw;
+  border-radius: 99cqw;
   background: var(--ggur-tab);
+  border: .22cqw solid var(--ggur-glass-edge);
+  box-shadow: 0 .8cqw 2cqw rgba(12, 4, 10, 0.35);
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 3.1cqw;
   font-weight: 600;
+  white-space: nowrap;
   color: var(--ggur-cream);
 }
 
@@ -173,7 +181,8 @@
   display: flex;
   justify-content: space-between;
   gap: 2cqw;
-  padding: 2cqw 2.6cqw 1.6cqw;
+  width: 100%;
+  padding: 3.8cqw 2.6cqw 1.6cqw;
   border-radius: 4cqw;
   background: var(--ggur-glass);
   border: .22cqw solid var(--ggur-glass-edge);
