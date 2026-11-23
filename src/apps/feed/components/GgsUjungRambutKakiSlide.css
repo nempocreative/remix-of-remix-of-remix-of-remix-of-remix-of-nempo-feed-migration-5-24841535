@@ -63,7 +63,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  padding-bottom: .4cqw;
+  padding-bottom: .22em;
 }
 
 .ggur-title-em {
@@ -105,7 +105,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  padding-bottom: .5cqw;
+  padding-bottom: .2em;
 }
 
 /* Reference-style ruled list: a vertical rule with hairlines between rows. */
