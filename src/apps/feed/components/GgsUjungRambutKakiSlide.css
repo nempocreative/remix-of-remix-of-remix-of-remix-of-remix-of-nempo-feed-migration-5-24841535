@@ -1,0 +1,174 @@
+/* GGS Feed slide 63 — head-to-toe treatment package. Scoped ggur- styles; colors live in src/styles.css. */
+.ggur-root {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  container-type: inline-size;
+  background: var(--ggur-bg);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ggur-ink);
+}
+
+.ggur-root * { letter-spacing: 0; }
+.ggur-root :where(p, h2, ul) { margin: 0; padding: 0; }
+
+.ggur-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.ggur-veil {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 66%;
+  background: var(--ggur-veil);
+}
+
+.ggur-copy {
+  position: absolute;
+  top: 16.8cqw;
+  left: 7cqw;
+  right: 7cqw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ggur-kicker {
+  font-size: 4cqw;
+  font-weight: 700;
+  letter-spacing: .35em;
+  text-transform: uppercase;
+  color: var(--ggur-pink-deep);
+  padding-left: .35em;
+}
+
+.ggur-title {
+  margin-top: 1cqw;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: .99;
+}
+
+.ggur-title-top {
+  display: block;
+  font-size: 9.2cqw;
+  font-weight: 700;
+  color: var(--ggur-plum);
+}
+
+.ggur-title-em {
+  display: block;
+  font-size: 9.2cqw;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ggur-pink-deep);
+  padding-bottom: .6cqw;
+}
+
+.ggur-price {
+  margin-top: .8cqw;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.4cqw;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--ggur-plum);
+  line-height: 1;
+}
+
+.ggur-price-lead {
+  font-size: 4.6cqw;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ggur-ink-soft);
+}
+
+.ggur-price-rp {
+  font-size: 5cqw;
+  font-weight: 700;
+  align-self: flex-start;
+  margin-top: 1.8cqw;
+}
+
+.ggur-price-num {
+  font-size: 13.4cqw;
+  font-weight: 700;
+  background: var(--ggur-price-fill);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: .4cqw;
+}
+
+.ggur-list {
+  list-style: none;
+  margin-top: 1.4cqw;
+  width: 74cqw;
+  padding: 2.2cqw 3cqw;
+  border-radius: 3.4cqw;
+  background: var(--ggur-card);
+  box-shadow: var(--ggur-card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3cqw;
+}
+
+.ggur-item {
+  display: flex;
+  align-items: center;
+  gap: 2.4cqw;
+  font-size: 3.8cqw;
+  font-weight: 600;
+  color: var(--ggur-ink);
+  text-align: left;
+}
+
+.ggur-num {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 5.4cqw;
+  height: 5.4cqw;
+  border-radius: 50%;
+  background: var(--ggur-pink);
+  color: var(--ggur-cream);
+  font-size: 2.9cqw;
+  font-weight: 700;
+}
+
+.ggur-name { flex: 1; }
+
+.ggur-detail {
+  flex: none;
+  font-size: 3.3cqw;
+  font-weight: 700;
+  color: var(--ggur-pink-deep);
+  background: var(--ggur-chip);
+  border-radius: 99cqw;
+  padding: .6cqw 2.2cqw;
+}
+
+.ggur-date {
+  margin-top: 2cqw;
+  font-size: 3.3cqw;
+  font-weight: 700;
+  color: var(--ggur-cream);
+  background: var(--ggur-plum);
+  border-radius: 99cqw;
+  padding: 1.1cqw 4.2cqw;
+}
+
+.ggur-watermark {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}

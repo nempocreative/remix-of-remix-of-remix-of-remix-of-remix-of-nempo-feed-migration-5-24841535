@@ -273,6 +273,21 @@
   --ggts-device-shadow: 0 2.4cqw 5cqw color-mix(in srgb, #5b1532 26%, transparent), 0 .5cqw 1.2cqw color-mix(in srgb, #5b1532 18%, transparent);
   --ggts-photo-fade: linear-gradient(180deg, transparent 45%, color-mix(in srgb, #2c0d1c 55%, transparent));
 }
+/* GGS Feed slide 63 (3:4): head-to-toe treatment package over a spa still life. */
+.ggur-root {
+  --ggur-bg: #f2d9cf;
+  --ggur-plum: #4a1631;
+  --ggur-ink: #3f1428;
+  --ggur-ink-soft: #7a3a55;
+  --ggur-pink: #df3f78;
+  --ggur-pink-deep: #c42a62;
+  --ggur-cream: #fff7f2;
+  --ggur-chip: #fde3ec;
+  --ggur-card: color-mix(in srgb, #fffaf7 88%, transparent);
+  --ggur-card-shadow: 0 1.6cqw 4cqw color-mix(in srgb, #7a2a48 16%, transparent);
+  --ggur-veil: linear-gradient(180deg, color-mix(in srgb, #fff5f0 70%, transparent) 0%, color-mix(in srgb, #fff5f0 45%, transparent) 70%, transparent 100%);
+  --ggur-price-fill: linear-gradient(100deg, #b51f57 10%, #e5508a 50%, #b51f57 90%);
+}
 /* GGS Feed slide 62 (3:4): "We are open" over the owner's treatment photo. */
 .ggop-root {
   --ggop-bg: #2b1a14;

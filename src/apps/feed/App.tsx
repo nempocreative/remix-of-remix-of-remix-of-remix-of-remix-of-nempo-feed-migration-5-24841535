@@ -214,6 +214,7 @@ import { GgsNailOpenSlide } from './components/GgsNailOpenSlide';
 import { GgsPromoAkhirTahunSlide } from './components/GgsPromoAkhirTahunSlide';
 import { GgsTeaserSpesialSlide } from './components/GgsTeaserSpesialSlide';
 import { GgsWeAreOpen62Slide } from './components/GgsWeAreOpen62Slide';
+import { GgsUjungRambutKakiSlide } from './components/GgsUjungRambutKakiSlide';
 import ggsNailOpenPng from '@/assets/ggs-feed-52-we-are-open.png.asset.json';
 import { GgsPovScrubSlide } from './components/GgsPovScrubSlide';
 import { GarutBeansOpeningSlide } from './components/GarutBeansOpeningSlide';
@@ -376,7 +377,7 @@ type FeedSlide =
   | 61
   | 62;
 
-type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62;
+type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62 | 63;
 
 const cafes = [
   {
@@ -2961,6 +2962,15 @@ function GgsWeAreOpen62Capture({ exportRef }: { exportRef: RefObject<HTMLElement
   return <GgsWeAreOpen62Slide exportRef={exportRef} frame={frame} />;
 }
 
+/** Slide 63: `?ggur=plain` drops the overlay (preview check only; the 3× PNG is captured with the frame on). */
+function GgsUjungRambutKakiCapture({ exportRef }: { exportRef: RefObject<HTMLElement | null> }) {
+  const [frame, setFrame] = useState(true);
+  useEffect(() => {
+    setFrame(new URLSearchParams(window.location.search).get('ggur') !== 'plain');
+  }, []);
+  return <GgsUjungRambutKakiSlide exportRef={exportRef} frame={frame} />;
+}
+
 /** Slide 52: `?ggno=plain` drops the overlay so the 3× PNG can composite a Lanczos-upscaled overlay afterwards. */
 /** Slides 54–58: `?ggsn=plain` drops the overlay so the 3× PNG can composite a Lanczos-upscaled overlay afterwards. */
 function GgsSantaHairCapture({ exportRef, slide }: { exportRef: RefObject<HTMLElement | null>; slide: GgsSantaHairSlideNumber }) {
@@ -3168,6 +3178,9 @@ function ClientFeedArtwork({
   }
   if (!isStory && slide === 62) {
     return <GgsWeAreOpen62Capture exportRef={exportRef} />;
+  }
+  if (!isStory && slide === 63) {
+    return <GgsUjungRambutKakiCapture exportRef={exportRef} />;
   }
   if (!isStory && slide === 59) {
     return <GgsModelRambutSlide exportRef={exportRef} />;
@@ -3529,7 +3542,7 @@ function App() {
       : isGgsFeed
       ? isGgsStory
         ? [1, 2, 3, 4, 5, 6, 7, 8]
-        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62]
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE, NEMPO_BAJIDORAN_SLIDE, NEMPO_BAJIDORAN_REEL_SLIDE, NEMPO_BAJIDORAN_SAWER_SLIDE, 49, NEMPO_SADULI_DJ_SLIDE, NEMPO_AJAK_REQUEST_SLIDE, NEMPO_HARI_INI_SLIDE, NEMPO_TERIMA_KASIH_SLIDE, NEMPO_MALAM_MINGGU_SLIDE, NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE, NEMPO_CAR_FREE_DAY_SLIDE, NEMPO_CFD_INFO_SLIDE, ...NEMPO_MOMEN_DIGITAL_SLIDES];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
