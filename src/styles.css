@@ -275,18 +275,20 @@
 }
 /* GGS Feed slide 63 (3:4): head-to-toe treatment package over a spa still life. */
 .ggur-root {
-  --ggur-bg: #f2d9cf;
+  --ggur-bg: linear-gradient(160deg, #3a1729 0%, #241019 48%, #14080d 100%);
   --ggur-plum: #4a1631;
-  --ggur-ink: #3f1428;
-  --ggur-ink-soft: #7a3a55;
-  --ggur-pink: #df3f78;
-  --ggur-pink-deep: #c42a62;
-  --ggur-cream: #fff7f2;
-  --ggur-chip: #fde3ec;
-  --ggur-card: color-mix(in srgb, #fffaf7 88%, transparent);
-  --ggur-card-shadow: 0 1.6cqw 4cqw color-mix(in srgb, #7a2a48 16%, transparent);
-  --ggur-veil: linear-gradient(180deg, color-mix(in srgb, #fff5f0 70%, transparent) 0%, color-mix(in srgb, #fff5f0 45%, transparent) 70%, transparent 100%);
-  --ggur-price-fill: linear-gradient(100deg, #b51f57 10%, #e5508a 50%, #b51f57 90%);
+  --ggur-cream: #fff4ee;
+  --ggur-cream-dim: #e9cfd9;
+  --ggur-pink: #f2669b;
+  --ggur-pink-soft: #f7a8c4;
+  --ggur-rule: color-mix(in srgb, #fff4ee 34%, transparent);
+  --ggur-veil: radial-gradient(ellipse 62% 38% at 84% 26%, color-mix(in srgb, #1c0b13 82%, transparent) 0%, color-mix(in srgb, #1c0b13 40%, transparent) 60%, transparent 100%), linear-gradient(180deg, transparent 72%, color-mix(in srgb, #14080d 55%, transparent) 100%);
+  --ggur-title-fill: linear-gradient(100deg, #fff8f3 15%, #f3d3df 55%, #b98a9c 100%);
+  --ggur-price-fill: linear-gradient(100deg, #ffd3e2 0%, #f2669b 55%, #ffb8d1 100%);
+  --ggur-tab: linear-gradient(90deg, #140a0f 0%, color-mix(in srgb, #3a1729 80%, transparent) 100%);
+  --ggur-glass: linear-gradient(100deg, color-mix(in srgb, #fff4ee 92%, transparent) 0%, color-mix(in srgb, #f6d6e2 78%, transparent) 55%, color-mix(in srgb, #e3a9c0 72%, transparent) 100%);
+  --ggur-glass-edge: color-mix(in srgb, #fff4ee 55%, transparent);
+  --ggur-glass-shadow: 0 1.6cqw 4cqw color-mix(in srgb, #000 35%, transparent);
 }
 /* GGS Feed slide 62 (3:4): "We are open" over the owner's treatment photo. */
 .ggop-root {

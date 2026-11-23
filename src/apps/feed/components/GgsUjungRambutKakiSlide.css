@@ -1,4 +1,5 @@
-/* GGS Feed slide 63 — head-to-toe treatment package. Scoped ggur- styles; colors live in src/styles.css. */
+/* GGS Feed slide 63 — head-to-toe treatment package. Scoped ggur- styles; colors live in src/styles.css.
+   Layout (cqw, slide is 100 × 133.3): photo on the left fading into a dark panel; offer in the right column. */
 .ggur-root {
   position: relative;
   width: 100%;
@@ -7,161 +8,199 @@
   container-type: inline-size;
   background: var(--ggur-bg);
   font-family: 'DM Sans', sans-serif;
-  color: var(--ggur-ink);
+  color: var(--ggur-cream);
 }
 
 .ggur-root * { letter-spacing: 0; }
-.ggur-root :where(p, h2, ul) { margin: 0; padding: 0; }
+.ggur-root :where(p, h2, ul, figure) { margin: 0; padding: 0; }
 
+/* The owner's massage room photo (1080×1920) shown whole: 75cqw wide = full slide height. */
 .ggur-photo {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  left: -8cqw;
+  width: 75cqw;
+  height: 133.34cqw;
   object-fit: cover;
-  object-position: 50% 50%;
+  -webkit-mask-image: linear-gradient(90deg, #000 64%, transparent 97%);
+  mask-image: linear-gradient(90deg, #000 64%, transparent 97%);
 }
 
 .ggur-veil {
   position: absolute;
-  inset: 0 0 auto;
-  height: 66%;
+  inset: 0;
   background: var(--ggur-veil);
+  pointer-events: none;
 }
 
-.ggur-copy {
+.ggur-head {
   position: absolute;
-  top: 16.8cqw;
-  left: 7cqw;
-  right: 7cqw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  top: 19.5cqw;
+  right: 5cqw;
+  text-align: right;
 }
 
 .ggur-kicker {
-  font-size: 4cqw;
+  font-size: 2.7cqw;
   font-weight: 700;
-  letter-spacing: .35em;
+  letter-spacing: .42em;
   text-transform: uppercase;
-  color: var(--ggur-pink-deep);
-  padding-left: .35em;
+  color: var(--ggur-pink-soft);
+  margin-right: -.42em;
 }
 
 .ggur-title {
-  margin-top: 1cqw;
+  margin-top: 1.2cqw;
   font-family: 'Playfair Display', Georgia, serif;
-  line-height: .99;
+  line-height: 1;
 }
 
 .ggur-title-top {
   display: block;
-  font-size: 9.2cqw;
+  font-size: 9.4cqw;
   font-weight: 700;
-  color: var(--ggur-plum);
-}
-
-.ggur-title-em {
-  display: block;
-  font-size: 9.2cqw;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--ggur-pink-deep);
-  padding-bottom: .6cqw;
-}
-
-.ggur-price {
-  margin-top: .8cqw;
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 1.4cqw;
-  font-family: 'Playfair Display', Georgia, serif;
-  color: var(--ggur-plum);
-  line-height: 1;
-}
-
-.ggur-price-lead {
-  font-size: 4.6cqw;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--ggur-ink-soft);
-}
-
-.ggur-price-rp {
-  font-size: 5cqw;
-  font-weight: 700;
-  align-self: flex-start;
-  margin-top: 1.8cqw;
-}
-
-.ggur-price-num {
-  font-size: 13.4cqw;
-  font-weight: 700;
-  background: var(--ggur-price-fill);
+  background: var(--ggur-title-fill);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   padding-bottom: .4cqw;
 }
 
-.ggur-list {
-  list-style: none;
-  margin-top: 1.4cqw;
-  width: 74cqw;
-  padding: 2.2cqw 3cqw;
-  border-radius: 3.4cqw;
-  background: var(--ggur-card);
-  box-shadow: var(--ggur-card-shadow);
+.ggur-title-em {
+  display: block;
+  font-size: 7.2cqw;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ggur-pink);
+  padding-bottom: .6cqw;
+}
+
+.ggur-side {
+  position: absolute;
+  top: 44.5cqw;
+  left: 50cqw;
+  right: 5cqw;
+}
+
+.ggur-price {
   display: flex;
   flex-direction: column;
-  gap: 1.3cqw;
+  align-items: flex-end;
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1;
+}
+
+.ggur-price-lead {
+  font-size: 3.8cqw;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ggur-cream-dim);
+  margin-bottom: -.6cqw;
+}
+
+.ggur-price-num {
+  font-size: 10.6cqw;
+  font-weight: 700;
+  background: var(--ggur-price-fill);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: .5cqw;
+}
+
+/* Reference-style ruled list: a vertical rule with hairlines between rows. */
+.ggur-list {
+  list-style: none;
+  margin-top: 1.6cqw;
+  position: relative;
+}
+
+.ggur-list::before {
+  content: '';
+  position: absolute;
+  left: 4.2cqw;
+  top: 0;
+  bottom: 0;
+  width: .22cqw;
+  background: var(--ggur-rule);
 }
 
 .ggur-item {
   display: flex;
-  align-items: center;
-  gap: 2.4cqw;
+  flex-direction: column;
+  padding: 1.15cqw 0 1.15cqw 7.4cqw;
+}
+
+.ggur-item + .ggur-item { border-top: .22cqw solid var(--ggur-rule); }
+
+.ggur-name {
   font-size: 3.8cqw;
-  font-weight: 600;
-  color: var(--ggur-ink);
-  text-align: left;
-}
-
-.ggur-num {
-  flex: none;
-  display: grid;
-  place-items: center;
-  width: 5.4cqw;
-  height: 5.4cqw;
-  border-radius: 50%;
-  background: var(--ggur-pink);
+  font-weight: 500;
+  line-height: 1.12;
+  white-space: nowrap;
   color: var(--ggur-cream);
-  font-size: 2.9cqw;
-  font-weight: 700;
 }
-
-.ggur-name { flex: 1; }
 
 .ggur-detail {
-  flex: none;
-  font-size: 3.3cqw;
+  margin-top: .3cqw;
+  font-size: 2.6cqw;
   font-weight: 700;
-  color: var(--ggur-pink-deep);
-  background: var(--ggur-chip);
-  border-radius: 99cqw;
-  padding: .6cqw 2.2cqw;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ggur-pink-soft);
+}
+
+.ggur-pack {
+  position: absolute;
+  left: 40cqw;
+  right: 5cqw;
+  bottom: 14.5cqw;
 }
 
 .ggur-date {
-  margin-top: 2cqw;
-  font-size: 3.3cqw;
-  font-weight: 700;
+  display: inline-block;
+  margin-left: 2.4cqw;
+  padding: 1.1cqw 4cqw 1.1cqw 3cqw;
+  border-radius: 99cqw 99cqw 0 0;
+  background: var(--ggur-tab);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3.1cqw;
+  font-weight: 600;
   color: var(--ggur-cream);
-  background: var(--ggur-plum);
-  border-radius: 99cqw;
-  padding: 1.1cqw 4.2cqw;
+}
+
+.ggur-thumbs {
+  display: flex;
+  justify-content: space-between;
+  gap: 2cqw;
+  padding: 2cqw 2.6cqw 1.6cqw;
+  border-radius: 4cqw;
+  background: var(--ggur-glass);
+  border: .22cqw solid var(--ggur-glass-edge);
+  box-shadow: var(--ggur-glass-shadow);
+}
+
+.ggur-thumb {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .9cqw;
+}
+
+.ggur-thumb img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 2.6cqw;
+  border: .5cqw solid var(--ggur-cream);
+}
+
+.ggur-thumb figcaption {
+  font-size: 2.6cqw;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ggur-plum);
 }
 
 .ggur-watermark {

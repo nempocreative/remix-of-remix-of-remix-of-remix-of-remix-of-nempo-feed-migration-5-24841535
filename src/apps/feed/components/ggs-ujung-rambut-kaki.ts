@@ -4,7 +4,7 @@ export type GgsUjungRambutKakiService = { name: string; detail?: string };
 export const GGS_UJUNG_RAMBUT_KAKI = {
   slide: 63,
   kicker: 'Perawatan dari',
-  titleTop: 'ujung rambut',
+  titleTop: 'Ujung Rambut',
   titleBottom: 'sampai ujung kaki',
   priceLead: 'hanya',
   price: 250_000,
@@ -13,6 +13,8 @@ export const GGS_UJUNG_RAMBUT_KAKI = {
     { name: 'Lulur full body', detail: '30 menit' },
     { name: 'Creambath & catok' },
   ] as readonly GgsUjungRambutKakiService[],
+  /** Captions under the three small treatment photos. */
+  thumbs: ['Lulur', 'Creambath', 'Catok'] as readonly string[],
   /** Promo period, inclusive, as ISO dates. */
   startDate: '2026-11-24',
   endDate: '2026-12-05',
