@@ -63,7 +63,8 @@
   font-style: normal;
   font-size: 15cqw;
   font-weight: 700;
-  padding-bottom: 1cqw;
+  padding-bottom: .22em;
+  margin-bottom: calc(1cqw - .22em);
   background: var(--ggop-title-fill);
   background-size: 250% 100%;
   background-clip: text;

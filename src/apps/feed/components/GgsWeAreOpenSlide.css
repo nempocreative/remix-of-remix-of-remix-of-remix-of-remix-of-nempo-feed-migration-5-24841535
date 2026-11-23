@@ -13,7 +13,7 @@
 .ggo-kicker { font-size: 2.8cqw; font-weight: 700; text-transform: uppercase; }
 .ggo-title { font-family: 'Playfair Display', Georgia, serif; line-height: .95; padding-top: 1cqw; }
 .ggo-title span { display: block; font-size: 6.4cqw; font-weight: 500; }
-.ggo-title em { display: block; font-size: 15cqw; font-weight: 700; padding-bottom: 1cqw; background: var(--ggo-title-fill); background-size: 250% 100%; background-clip: text; -webkit-background-clip: text; color: transparent; animation: ggo-shine 8s ease-in-out infinite; }
+.ggo-title em { display: block; font-size: 15cqw; font-weight: 700; padding-bottom: .22em; margin-bottom: calc(1cqw - .22em); background: var(--ggo-title-fill); background-size: 250% 100%; background-clip: text; -webkit-background-clip: text; color: transparent; animation: ggo-shine 8s ease-in-out infinite; }
 .ggo-title span { animation: ggo-title-enter 8s ease both infinite; }
 .ggo-invite { position: absolute; z-index: 3; left: 7cqw; right: 7cqw; top: 97cqw; text-align: center; color: var(--ggo-paper); }
 .ggo-invite h2 { font-size: 5.1cqw; font-weight: 800; line-height: 1.12; animation: ggo-invite 8s ease both infinite; }

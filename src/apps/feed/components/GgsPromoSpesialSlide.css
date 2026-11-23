@@ -88,7 +88,7 @@
   font-weight: 700; font-size: 11.5cqw; line-height: .98;
 }
 .ggp-title-word {
-  display: block; white-space: nowrap;
+  display: block; white-space: nowrap; padding-bottom: .22em; margin-bottom: -.22em;
   background: linear-gradient(100deg, var(--ggp-magenta) 0%, var(--ggp-magenta) 38%, #ff8cc6 48%, var(--ggp-magenta) 58%, var(--ggp-magenta) 100%);
   background-size: 260% 100%;
   -webkit-background-clip: text; background-clip: text; color: transparent;
