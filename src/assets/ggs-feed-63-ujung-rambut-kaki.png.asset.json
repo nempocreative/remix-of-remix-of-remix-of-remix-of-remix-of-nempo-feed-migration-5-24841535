@@ -1,11 +1,11 @@
 {
-  "asset_id": "74b57c19-a15f-42a6-8adb-2c27f9f6a393",
-  "content_type": "image/png",
-  "created_at": "2026-11-23T11:10:29Z",
-  "original_filename": "ggs-feed-63-ujung-rambut-kaki-v3.png",
+  "version": 1,
+  "asset_id": "495f3797-dc2b-4626-9149-f8224740928f",
   "project_id": "f2692ad0-2f83-4ca8-b0ec-ff27537c3e1d",
-  "r2_key": "a/v1/f2692ad0-2f83-4ca8-b0ec-ff27537c3e1d/74b57c19-a15f-42a6-8adb-2c27f9f6a393/ggs-feed-63-ujung-rambut-kaki-v3.png",
-  "size": 9594069,
-  "url": "/__l5e/assets-v1/74b57c19-a15f-42a6-8adb-2c27f9f6a393/ggs-feed-63-ujung-rambut-kaki-v3.png",
-  "version": 1
+  "url": "/__l5e/assets-v1/495f3797-dc2b-4626-9149-f8224740928f/ggs-feed-63-ujung-rambut-kaki-v4.png",
+  "r2_key": "a/v1/f2692ad0-2f83-4ca8-b0ec-ff27537c3e1d/495f3797-dc2b-4626-9149-f8224740928f/ggs-feed-63-ujung-rambut-kaki-v4.png",
+  "original_filename": "ggs-feed-63-ujung-rambut-kaki-v4.png",
+  "size": 9757961,
+  "content_type": "image/png",
+  "created_at": "2026-11-23T11:33:48Z"
 }
