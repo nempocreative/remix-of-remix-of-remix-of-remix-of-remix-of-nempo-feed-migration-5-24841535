@@ -16,7 +16,7 @@
 - [x] Slide 56: judul pakai gaya huruf poster contoh "Suara Petualang!" (putih); PNG unduhan dibuat ulang
 - [x] Slide 56: latar diganti gambar panggung kelapa dari pemilik, semua tulisan dibuat lucu/ceria; PNG unduhan dibuat ulang
 - [x] Slide 56: baris "Segera di cafe & tempat wisata" dimiringkan sama seperti stiker di atasnya; PNG unduhan dibuat ulang
-- [ ] NEMPO Feed slide 57: poster ceria Car Free Day Jl. Ibrahim Adji Garut ("jajan apa?": Cilok & Cimol, Seblak, Bubur Ayam, Surabi), judul harus jelas terbaca; PNG unduhan
+- [x] NEMPO Feed slide 57: poster ceria Car Free Day Jl. Ibrahim Adjie Garut ("jajan apa?": Cilok & Cimol, Seblak, Bubur Ayam, Surabi), judul harus jelas terbaca; PNG unduhan
 - [x] NEMPO Feed slide 58: Car Free Day Jl. Ibrahim Adji Garut dengan info dari internet; gambar harus FOTO ASLI dari internet (bukan ilustrasi AI)
 - [x] GGS Story slide 08: video pijat estetik (close-up kaki lalu tangan) dengan teks "Massage time" di tengah + download MP4
 - [ ] GGS Story slide 08: bingkai header/footer Story belum dipasang — menunggu pemilik mengirim ulang gambar bingkainya (media proyek lama tidak ikut)

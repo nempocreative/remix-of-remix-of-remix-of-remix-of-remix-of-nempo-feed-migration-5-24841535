@@ -8,6 +8,9 @@ describe('NEMPO Feed slide 57 car free day post', () => {
   it('is set on Jl. Ibrahim Adjie, Garut', () => {
     expect(nempoCarFreeDay.tagline).toBe('Jl. Ibrahim Adjie, Garut');
   });
+  it('shows the Sunday date on the poster', () => {
+    expect(nempoCarFreeDay.release).toBe('Minggu pagi · 29 November 2026');
+  });
   it('asks which snack followers hunt for at car free day', () => {
     expect(nempoCarFreeDay.question).toBe('Biasanya car free day kalian nginjer jajanan apa?');
   });

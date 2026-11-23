@@ -12,7 +12,7 @@ export const nempoCarFreeDay = {
   badge: 'Car Free Day',
   title: ['Car Free Day,', 'Jajan Apa?'],
   tagline: 'Jl. Ibrahim Adjie, Garut',
-  release: 'Minggu pagi · 22 November 2026',
+  release: 'Minggu pagi · 29 November 2026',
   question: 'Biasanya car free day kalian nginjer jajanan apa?',
   options: ['Cilok & Cimol', 'Seblak', 'Bubur Ayam', 'Surabi'],
   cta: 'Tulis nomornya di komentar ya!',
