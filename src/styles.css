@@ -2929,3 +2929,28 @@ html, body, #root {
   --nhi-neon-gold: color-mix(in srgb, #ffd23a 55%, transparent);
   --nhi-pill-glow: drop-shadow(0 0 1.2cqw color-mix(in srgb, #ffe46b 80%, transparent));
 }
+
+/* Nempo Feed slide 63: Vibez-Fest-style Bajidoran DJ poster (warm sunset festival palette). */
+.nbx-root {
+  --nbx-sky: #f7a35c;
+  --nbx-haze: linear-gradient(180deg, color-mix(in srgb, #b8380e 62%, transparent) 0%, color-mix(in srgb, #d9541a 28%, transparent) 14%, transparent 30%, transparent 70%, color-mix(in srgb, #ffcf9a 38%, transparent) 82%, color-mix(in srgb, #ffe0b8 62%, transparent) 100%);
+  --nbx-fade: linear-gradient(180deg, transparent 0%, color-mix(in srgb, #ff9a4a 30%, transparent) 30%, color-mix(in srgb, #e9692a 72%, transparent) 62%, color-mix(in srgb, #c8501c 88%, transparent) 100%);
+  --nbx-white: #ffffff;
+  --nbx-cream: #fff4e2;
+  --nbx-ink: #2a1205;
+  --nbx-ink-soft: #7a3e17;
+  --nbx-text-shadow: 0 .3cqw 1.4cqw color-mix(in srgb, #5a1a02 70%, transparent);
+  --nbx-title-shadow: drop-shadow(0 1.4cqw 2.4cqw color-mix(in srgb, #6a1f00 45%, transparent));
+  --nbx-cutout-shadow: drop-shadow(0 1cqw 2.4cqw color-mix(in srgb, #5a1a02 40%, transparent));
+  --nbx-tag-shadow: 0 .5cqw 0 #ff8a1e;
+  --nbx-label-glow: 0 0 1.2cqw #fff4e2, 0 0 2.4cqw #fff4e2;
+  --nbx-pill-shadow: 0 .6cqw 1.6cqw color-mix(in srgb, #5a1a02 35%, transparent);
+  --nbx-pill-gold: linear-gradient(90deg, #ffc477 0%, #ff9a3c 100%);
+  --nbx-pill-pink: linear-gradient(90deg, #ffb3d1 0%, #ff6fae 100%);
+  --nbx-pill-violet: linear-gradient(90deg, #a77bff 0%, #6a3cf0 100%);
+  --nbx-time-shadow: 0 .4cqw 0 #c2410c, 0 0 1.8cqw color-mix(in srgb, #8a2a00 55%, transparent);
+  --nbx-tag-fill: linear-gradient(90deg, #ffb25c 0%, #ff7a1a 100%);
+  --nbx-box: linear-gradient(90deg, #fff1dc 0%, #ffc988 100%);
+  --nbx-box-solid: #ffe7c6;
+  --nbx-box-shadow: 0 .8cqw 2cqw color-mix(in srgb, #5a1a02 35%, transparent), inset 0 0 0 .3cqw color-mix(in srgb, #ffffff 70%, transparent);
+}

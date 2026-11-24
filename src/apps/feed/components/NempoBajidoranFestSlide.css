@@ -1,0 +1,81 @@
+/* NEMPO Feed slide 63 — Vibez-Fest-style Bajidoran DJ poster. Colors live in src/styles.css (.nbx-root). */
+.nbx-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nbx-sky); color: var(--nbx-white);
+  font-family: 'Poppins', sans-serif;
+}
+.nbx-root * { box-sizing: border-box; letter-spacing: 0; }
+.nbx-root p, .nbx-root h2 { margin: 0; padding: 0; }
+
+/* Warm hazy stage backdrop (1086×1448, 3:4) + a deeper tint at the top so the white header reads */
+.nbx-bg { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.nbx-haze { position: absolute; z-index: 1; inset: 0; pointer-events: none; background: var(--nbx-haze); }
+
+/* Same header as the Good Story Cafe event slides (46–53) */
+.nbx-header { z-index: 9; font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif; }
+.nbx-header * { letter-spacing: initial; }
+.nbx-root .kmt-name { text-shadow: var(--nbx-text-shadow); }
+.nbx-root .nar-gsc { background: var(--nbx-cream); }
+
+/* Owner's 3D BAJIDORAN DJ lettering (1476×860) */
+.nbx-title { position: absolute; z-index: 4; top: 18.5cqw; left: 0; right: 0; display: flex; justify-content: center; }
+.nbx-title img { display: block; width: 84cqw; height: auto; filter: var(--nbx-title-shadow); pointer-events: none; user-select: none; }
+.nbx-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Performers: DJs at the back sides, dancers and the kendang group in front; bottom fades into the info area */
+.nbx-cast { position: absolute; z-index: 5; inset: 0; pointer-events: none; }
+.nbx-cast img { position: absolute; display: block; height: auto; user-select: none; filter: var(--nbx-cutout-shadow); }
+.nbx-dj--green { left: -3cqw; top: 52cqw; width: 30cqw; }
+.nbx-dj--hoodie { right: -1cqw; top: 50cqw; width: 26cqw; }
+.nbx-dancers { left: 0cqw; top: 76cqw; width: 42cqw; z-index: 2; }
+.nbx-kendang { left: 30cqw; top: 58cqw; width: 58cqw; z-index: 1; }
+.nbx-tag {
+  position: absolute; z-index: 3; padding: .9cqw 2.2cqw; border-radius: 99cqw; white-space: nowrap;
+  font-family: 'Anton', sans-serif; font-size: 2.9cqw; line-height: 1; text-transform: uppercase;
+  color: var(--nbx-white); background: var(--nbx-ink); box-shadow: var(--nbx-tag-shadow); transform: rotate(-4deg);
+}
+.nbx-tag--green { left: 4cqw; top: 66cqw; }
+.nbx-tag--hoodie { right: 3cqw; top: 64cqw; transform: rotate(4deg); }
+
+/* Activity pills (like Vibez "Activities") */
+.nbx-activities { position: absolute; z-index: 7; left: 3cqw; right: 3cqw; top: 97.5cqw; display: flex; justify-content: center; align-items: center; gap: 1.6cqw; }
+.nbx-activities p { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.nbx-pill {
+  display: inline-flex; align-items: center; gap: 1.2cqw; padding: 1.2cqw 2.5cqw; border-radius: 99cqw;
+  font-weight: 800; font-size: 3cqw; line-height: 1; color: var(--nbx-ink); white-space: nowrap; box-shadow: var(--nbx-pill-shadow);
+}
+.nbx-pill svg { width: 3.4cqw; height: 3.4cqw; flex: none; }
+.nbx-pill--gold { background: var(--nbx-pill-gold); transform: rotate(-3deg); }
+.nbx-pill--pink { background: var(--nbx-pill-pink); transform: rotate(2deg); }
+.nbx-pill--violet { background: var(--nbx-pill-violet); color: var(--nbx-white); transform: rotate(-2deg); }
+
+/* Warm glow over the performers' legs so the info area reads (sits above the cut-outs) */
+.nbx-fade { position: absolute; z-index: 6; left: 0; right: 0; bottom: 0; height: 44cqw; pointer-events: none; background: var(--nbx-fade); }
+
+/* Time row */
+.nbx-times { position: absolute; z-index: 7; left: 4cqw; right: 4cqw; top: 107cqw; display: flex; justify-content: center; gap: 4cqw; }
+.nbx-time { display: inline-flex; align-items: center; gap: 1.6cqw; }
+.nbx-time-label { font-family: 'Anton', sans-serif; font-size: 6.4cqw; line-height: 1.2; text-transform: uppercase; color: var(--nbx-cream); text-shadow: var(--nbx-time-shadow); }
+.nbx-time-value { padding: .5cqw 1.6cqw .6cqw; font-family: 'Anton', sans-serif; font-size: 4.8cqw; line-height: 1.2; text-transform: uppercase; color: var(--nbx-ink); background: var(--nbx-tag-fill); }
+
+/* Date + venue boxes */
+.nbx-info { position: absolute; z-index: 7; left: 4cqw; right: 4cqw; top: 116cqw; height: 10.6cqw; display: flex; gap: 1.6cqw; }
+.nbx-info > div { display: flex; align-items: center; background: var(--nbx-box); box-shadow: var(--nbx-box-shadow); color: var(--nbx-ink); }
+.nbx-date { flex: none; flex-direction: column; justify-content: center; align-items: center !important; padding: 0 3.4cqw; }
+.nbx-date small { font-weight: 800; font-size: 2.4cqw; line-height: 1; text-transform: uppercase; letter-spacing: .14em !important; color: var(--nbx-ink-soft); }
+.nbx-date b { font-family: 'Anton', sans-serif; font-weight: 400; font-size: 6cqw; line-height: 1.15; text-transform: uppercase; }
+.nbx-venue { flex: 1; gap: 2cqw; padding: 0 3cqw; }
+.nbx-venue svg { width: 5.4cqw; height: 5.4cqw; flex: none; fill: var(--nbx-ink); color: var(--nbx-box-solid); }
+.nbx-venue span { display: flex; flex-direction: column; gap: .5cqw; }
+.nbx-venue b { font-family: 'Anton', sans-serif; font-weight: 400; font-size: 4.6cqw; line-height: 1.1; text-transform: uppercase; }
+.nbx-venue small { font-weight: 700; font-size: 2.15cqw; white-space: nowrap; line-height: 1.15; text-transform: uppercase; color: var(--nbx-ink-soft); }
+
+/* White bottom bar (like the Vibez partners strip) */
+.nbx-bar {
+  position: absolute; z-index: 8; left: 0; right: 0; bottom: 0; height: 5.4cqw; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5cqw; background: var(--nbx-white); color: var(--nbx-ink); font-weight: 600; font-size: 2.5cqw; line-height: 1;
+}
+.nbx-bar span { display: inline-flex; align-items: center; gap: 1cqw; white-space: nowrap; }
+.nbx-bar svg { width: 2.6cqw; height: 2.6cqw; }
+.nbx-bar b { font-weight: 800; }
+.nbx-bar-socials { font-weight: 800; }
