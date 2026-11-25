@@ -816,6 +816,17 @@
   --nmm-tile-blue: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);
   --nmm-tile-shine: color-mix(in srgb, #ffffff 30%, transparent);
 }
+/* Nempo Feed slide 64: Hari Guru Nasional commemoration poster, basic NEMPO blue + yellow. */
+.nhg-root {
+  --nhg-bg: radial-gradient(circle at 50% 68%, #1a7fd6 0%, #0b4f93 46%, #062f4d 100%);
+  --nhg-glow: radial-gradient(ellipse, color-mix(in srgb, #ffdd00 20%, transparent) 0%, color-mix(in srgb, #5fb4ff 18%, transparent) 40%, transparent 70%);
+  --nhg-yellow: #ffdd00;
+  --nhg-navy: #062f4d;
+  --nhg-soft: color-mix(in srgb, #ffffff 86%, transparent);
+  --nhg-chalk: #f4f7ee;
+  --nhg-text-shadow: 0 .5cqw 2cqw color-mix(in srgb, #021a2e 40%, transparent);
+  --nhg-art-shadow: drop-shadow(0 2.4cqw 3cqw color-mix(in srgb, #021a2e 45%, transparent));
+}
 /* Nempo Feed slides 55–56: collab call for cafes & tourist spots, basic NEMPO blue + yellow (slide 45). */
 .nko-root {
   --nko-bg: radial-gradient(circle at 74% 30%, #1a7fd6 0%, #0b4f93 45%, #062f4d 100%);

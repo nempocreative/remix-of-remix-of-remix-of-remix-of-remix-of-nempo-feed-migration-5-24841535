@@ -1,0 +1,39 @@
+/* NEMPO Feed slide 64 — Hari Guru poster in the basic NEMPO blue look. Colors live in src/styles.css (.nhg-root).
+   Layout (cqw, slide is 100 × 133.3): header, centred greeting 21–62, illustration 66–119, footer. */
+.nhg-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nhg-bg); color: var(--kmt-text);
+  font-family: 'Bricolage Grotesque', 'DM Sans', sans-serif;
+}
+.nhg-root * { letter-spacing: 0; box-sizing: border-box; }
+.nhg-root p, .nhg-root h2 { margin: 0; padding: 0; }
+
+.nhg-bg { position: absolute; inset: 0; z-index: 0; pointer-events: none; overflow: hidden; }
+.nhg-grid { position: absolute; inset: 0; background-image: var(--kmt-grid); background-size: 6cqw 6cqw; mask-image: radial-gradient(circle at 50% 66%, #000 0%, transparent 62%); }
+.nhg-ring { position: absolute; left: 50%; border-radius: 50%; border: .3cqw solid var(--kmt-line); transform: translateX(-50%); }
+.nhg-ring-a { width: 96cqw; height: 96cqw; top: 44cqw; }
+.nhg-ring-b { width: 72cqw; height: 72cqw; top: 56cqw; border-style: dashed; }
+.nhg-glow { position: absolute; left: 50%; top: 52cqw; width: 90cqw; height: 80cqw; transform: translateX(-50%); background: var(--nhg-glow); }
+
+.nhg-hero { position: absolute; z-index: 3; top: 21.5cqw; left: 7.5cqw; right: 7.5cqw; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.nhg-kicker {
+  display: inline-flex; align-items: center; gap: 1.4cqw; padding: 1.2cqw 2.8cqw 1.2cqw 2.2cqw; border-radius: 99px;
+  background: var(--nhg-yellow); color: var(--nhg-navy); font-size: 2.2cqw; font-weight: 800; line-height: 1;
+  text-transform: uppercase; letter-spacing: .12em !important; white-space: nowrap;
+}
+.nhg-kicker svg { width: 2.9cqw; height: 2.9cqw; }
+.nhg-title { margin-top: 3.2cqw !important; display: flex; flex-direction: column; align-items: center; line-height: 1; text-shadow: var(--nhg-text-shadow); white-space: nowrap; }
+.nhg-title span { font-size: 7cqw; font-weight: 600; }
+.nhg-title em { margin-top: .6cqw; font-style: normal; font-size: 16.5cqw; font-weight: 800; letter-spacing: -.03em !important; color: var(--nhg-yellow); }
+.nhg-message { margin-top: 3cqw !important; max-width: 62cqw; font-size: 3cqw; font-weight: 500; line-height: 1.4; color: var(--nhg-soft); }
+.nhg-tagline { margin-top: 2.6cqw !important; display: flex; align-items: center; gap: 2cqw; font-size: 2cqw; font-weight: 800; line-height: 1; text-transform: uppercase; letter-spacing: .18em !important; color: var(--nhg-yellow); white-space: nowrap; }
+.nhg-tagline span { width: 8cqw; height: 1px; background: var(--kmt-line-strong); }
+
+/* Cut-out is 1123×760; its blank chalkboard face sits at 53.3–84.4% × 14–52%. */
+.nhg-art { position: absolute; z-index: 2; left: 50%; top: 66cqw; width: 78cqw; aspect-ratio: 1123 / 760; transform: translateX(-50%); filter: var(--nhg-art-shadow); }
+.nhg-art img { display: block; width: 100%; height: 100%; }
+.nhg-root .nhg-chalk {
+  position: absolute; left: 54.5%; top: 15%; width: 28.5%; height: 36%; display: grid; place-items: center; text-align: center;
+  font-family: 'Caveat', cursive; font-size: 4.3cqw; font-weight: 700; line-height: .95; color: var(--nhg-chalk);
+  transform: rotate(-.6deg);
+}
