@@ -1,10 +1,10 @@
 import type { RefObject } from 'react';
 import ggsWatermark from '@/assets/ggs-header-footer-v2-rebuilt.webp.asset.json';
-import backdrop from '@/assets/ggs-feed-64-hari-guru-latar.webp.asset.json';
+import backdrop from '@/assets/ggs-feed-64-hari-guru-meja.webp.asset.json';
 import { GGS_HARI_GURU as C, GGS_HARI_GURU_DATE, GGS_HARI_GURU_OFFERS, GGS_HARI_GURU_TEXT } from './ggs-hari-guru';
 import './GgsHariGuruSlide.css';
 
-/** GGS Feed slide 64: Hari Guru greeting + one-day promo (Massage, Creambath) over a blush still life. */
+/** GGS Feed slide 64: Hari Guru greeting + one-day promo (Massage, Creambath) above a blush still life; text and objects never overlap. */
 export function GgsHariGuruSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
