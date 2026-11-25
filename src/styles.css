@@ -290,6 +290,20 @@
   --ggur-glass-edge: color-mix(in srgb, #fff4ee 55%, transparent);
   --ggur-glass-shadow: 0 1.6cqw 4cqw color-mix(in srgb, #000 35%, transparent);
 }
+/* GGS Feed slide 64 (3:4): Hari Guru one-day promo over a blush still life. */
+.gghg-root {
+  --gghg-wall: #f1d3c8;
+  --gghg-plum: #4a1631;
+  --gghg-plum-soft: #7a3a55;
+  --gghg-cream: #fff4ee;
+  --gghg-pink: #d63f78;
+  --gghg-pink-soft: #f7a8c4;
+  --gghg-veil: linear-gradient(180deg, color-mix(in srgb, #fbe6dd 78%, transparent) 0%, color-mix(in srgb, #fbe6dd 52%, transparent) 34%, transparent 52%);
+  --gghg-pill-shadow: 0 .6cqw 1.6cqw color-mix(in srgb, #4a1631 30%, transparent);
+  --gghg-card: linear-gradient(150deg, color-mix(in srgb, #5a1b3c 94%, transparent) 0%, color-mix(in srgb, #32101f 94%, transparent) 100%);
+  --gghg-card-edge: color-mix(in srgb, #fff4ee 40%, transparent);
+  --gghg-card-shadow: 0 1.6cqw 4cqw color-mix(in srgb, #4a1631 34%, transparent);
+}
 /* GGS Feed slide 62 (3:4): "We are open" over the owner's treatment photo. */
 .ggop-root {
   --ggop-bg: #2b1a14;
